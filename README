@@ -1,0 +1,5 @@
+
+Run coral as web application using webswing.
+
+docker run -it --rm -p 8080:8080 -p 2200:22 ws bash
+
