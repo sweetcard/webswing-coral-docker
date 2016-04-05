@@ -1,5 +1,24 @@
-
 Run coral as web application using webswing.
 
-docker run -it --rm -p 8080:8080 -p 2200:22 ws bash
+Build the image and run it with docker:
+
+docker build -t ws .
+docker run -it --rm -p 8080:8080 ws bash
+
+Then use the URL:
+
+http://localhost:8080/?app=Coral&anonym=true
+
+
+Upstart Script:
+---
+start on filesystem and started docker
+stop on runlevel [!2345]
+respawn
+script
+    /usr/bin/docker stop webswing-coral || true
+    /usr/bin/docker rm webswing-coral || true
+    /usr/bin/docker run --rm --name=webswing-coral -p 8080:8080 webswing-coral
+end script
+
 
