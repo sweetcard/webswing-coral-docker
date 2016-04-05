@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- JNLP File for Coral -->
+
+<jnlp spec="1.0" codebase="http://coral.nanofab.utah.edu/coral/"
+        href="etc/coral.jnlp">
+
+        <information>
+                <title>Coral Remote</title>
+                <vendor>Utah Nanofab</vendor>
+                <homepage href="coral.nanofab.utah.edu"/>
+                <description>Open Coral Laboratory Management Software System</description>
+                <description kind="short">Open Coral</description>
+                <icon href="etc/coral_icon.jpg"/>
+                <shortcut online="true">
+                        <desktop/>
+                        <menu submenu="Coral"/>
+                </shortcut>
+        </information>
+
+        <security>
+                <all-permissions/>
+        </security>
+
+        <update check="timeout" policy="prompt-update"/>
+
+        <resources>
+          <!-- <property name="jnlp.MAXLOGIN" value="false"/> -->
+                <j2se version="1.6+"/>
+                <jar href="lib/coral.jar"/>
+                <jar href="lib/config.jar"/>
+                <jar href="lib/castor-core.jar"/>
+                <jar href="lib/castor-xml.jar"/>
+                <jar href="lib/castor-xml-schema.jar"/>
+                <jar href="lib/log4j.jar"/>
+                <jar href="lib/logging.jar"/>
+                <jar href="lib/logging-api.jar"/>
+                <jar href="lib/xerces.jar"/>
+                <jar href="lib/xml-apis.jar"/>
+                <jar href="lib/xalan.jar"/>
+                <jar href="lib/regexp.jar"/>
+                <jar href="lib/xacml.jar"/>
+                <jar href="lib/jcommon.jar"/>
+                <jar href="lib/jfreechart.jar"/>
+                <jar href="lib/provider.jar"/>
+    <!-- <extension href="etc/coraljce.jnlp"/> -->
+        </resources>
+
+        <application-desc main-class="org.opencoral.main.Coral">
+                <argument>-propertyFile=remote</argument>
+                <argument>-locale=en,US</argument>
+        </application-desc>
+
+</jnlp>
