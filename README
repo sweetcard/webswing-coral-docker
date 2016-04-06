@@ -2,8 +2,8 @@ Run coral as web application using webswing.
 
 Build the image and run it with docker:
 
-docker build -t ws .
-docker run -it --rm -p 8080:8080 ws bash
+docker build -t webswing-coral .
+docker run -it --rm -p 8080:8080 webswing-coral bash
 
 Then use the URL:
 
