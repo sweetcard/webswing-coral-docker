@@ -1,2 +1,0 @@
-java -cp /var/tmp/coral/castor-core.jar:/var/tmp/coral/castor-xml.jar:/var/tmp/coral/castor-xml-schema.jar:/var/tmp/coral/config.jar:/var/tmp/coral/coral.jar:/var/tmp/coral/jcommon.jar:/var/tmp/coral/jfreechart.jar:/var/tmp/coral/log4j.jar:/var/tmp/coral/logging-api.jar:/var/tmp/coral/logging.jar:/var/tmp/coral/provider.jar:/var/tmp/coral/regexp.jar:/var/tmp/coral/xacml.jar:/var/tmp/coral/xalan.jar:/var/tmp/coral/xerces.jar:/var/tmp/coral/xml-apis.jar org.opencoral.main.Coral -propertyFile=remote -locale=en,US
-
