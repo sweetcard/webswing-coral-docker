@@ -40,9 +40,12 @@ WORKDIR /home/webswing
 ###
 ### IN CASE WE WANT SSH -Y CAPABILITY
 ###
-RUN apt-get install -y openssh-server && \
-	(echo 'service ssh start' >> /root/.bashrc) && \
-	(echo 'webswing:8sQj9IjBPLtunefF6Tn' | chpasswd)
+
+#uncomment to add ability to connect with ssh -Y  (useful for testing)
+#RUN apt-get install -y openssh-server && \
+#	(echo 'service ssh start' >> /root/.bashrc) && \
+#	(echo 'webswing:8sQj9IjBPLtunefF6Tn' | chpasswd)
+
 ### 
 ### END OF SSH STUFF
 ### 
